@@ -5,6 +5,8 @@ import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
 import toastr from 'toastr';
 
+toastr.options.progressBar = true;
+
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
     super(props, context);
