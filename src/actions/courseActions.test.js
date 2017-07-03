@@ -32,7 +32,7 @@ const mockStore = configureMockStore(middleware);
 describe('Async Actions', () => {
   afterEach(() => {
     nock.cleanAll();
-  })
+  });
 
   it('should create BEGIN_AJAX_CALL and LOAD_COURSES_SUCCESS when loading courses', (done) => {
     // In a real app, you'd likely make a real HTTP call.
@@ -58,6 +58,6 @@ describe('Async Actions', () => {
       expect(actions[0].type).toEqual(types.BEGIN_AJAX_CALL);
       expect(actions[1].type).toEqual(types.LOAD_COURSES_SUCCESS);
       done();
-    })
+    });
   });
 });
