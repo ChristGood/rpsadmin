@@ -1,7 +1,6 @@
 import expect from 'expect';
 import React from 'react';
 import {mount, shallow} from 'enzyme';
-import TestUtils from 'react-addons-test-utils';
 import CourseForm from './CourseForm';
 
 function setup(saving) {
@@ -23,9 +22,9 @@ it('renders form and h1', () => {
 it('save button is labeled "Save" when not saving', () => {
   const wrapper = setup(false);
   expect(wrapper.find('input').props().value).toBe('Save');
-})
+});
 
 it('save button is labeled "Saving..." when not saving', () => {
   const wrapper = setup(true);
   expect(wrapper.find('input').props().value).toBe('Saving...');
-})
+});
