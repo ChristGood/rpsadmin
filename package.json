@@ -33,8 +33,7 @@
     "react-test-renderer": "15.6.1",
     "redux": "3.7.1",
     "redux-thunk": "2.2.0",
-    "toastr": "2.1.2",
-    "webpack": "3.0.0"
+    "toastr": "2.1.2"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",

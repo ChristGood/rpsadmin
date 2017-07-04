@@ -25,7 +25,7 @@ export default {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
     new ExtractTextPlugin('styles.css'),
-    new webpack.optimize.UglifyJsPlugin
+    new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
     rules: [
