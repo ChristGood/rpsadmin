@@ -3,10 +3,8 @@
 // In this case, the transformation is useful since we only use a separate css file in prod.
 import fs from 'fs';
 import cheerio from 'cheerio';
-
 const logger = require('tracer').colorConsole();
 
-/*eslint-disable no-console */
 
 fs.readFile('src/index.html', 'utf8', (err, markup) => {
   if (err) {

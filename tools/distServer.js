@@ -2,8 +2,8 @@ import express from 'express';
 import path from 'path';
 import open from 'open';
 import compression from 'compression';
+const logger = require('tracer').colorConsole();
 
-/* eslint-disable no-console */
 
 const port = 9006;
 const app = express();
@@ -17,7 +17,7 @@ app.get('*', function(req, res) {
 
 app.listen(port, function(err) {
   if (err) {
-    console.log(err);
+    logger.error(err);
   } else {
     open(`http://localhost:${port}`);
   }

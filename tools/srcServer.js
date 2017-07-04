@@ -3,8 +3,7 @@ import webpack from 'webpack';
 import path from 'path';
 import config from '../webpack.config.dev';
 import open from 'open';
-
-/* eslint-disable no-console */
+const logger = require('tracer').colorConsole();
 
 const port = 9006;
 const app = express();
@@ -23,7 +22,7 @@ app.get('*', function(req, res) {
 
 app.listen(port, function(err) {
   if (err) {
-    console.log(err);
+    logger.error(err);
   } else {
     open(`http://localhost:${port}`);
   }
