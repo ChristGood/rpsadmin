@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
+import PropTypes from 'prop-types';
 
 const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
   return (
